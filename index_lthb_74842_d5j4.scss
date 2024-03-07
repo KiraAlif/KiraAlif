@@ -1,0 +1,22 @@
+const formatDate = date => new Date(date).toLocaleDateString();
+orange * 16
+const multiply = (a, b) => a * b;
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+orange
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+// This is a comment
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const squareRoot = num => Math.sqrt(num);
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
