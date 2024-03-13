@@ -1,0 +1,40 @@
+const formatDate = date => new Date(date).toLocaleDateString();
+banana
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+66 + 10,64,69,8,25,13,40,81,91,74,79,72,7,17,70,52,31,25,74,87,35,9,11,10,14,54,28,2,60,71,9,52,48,88,76,65,29,76,42,6,12,62,1,75,51,39,21,58,38,80,69,39,45,30,84,35,69,7,92,29,66,4,7,0,88,77,54,0,28,18,98,67,93,94,72,94,87,59,44,72,22,91,55,22,99,60,26,3,53,9,38,80,63
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+orange
+
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+18 / 45
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const isPalindrome = str => str === str.split("").reverse().join("");
+const randomNumber = getRandomNumber();
+banana
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+33 + 27,92,59,47,49,6,67,68,83,47,36,80,60,85,24,45,24,69,44,4,42,27,90,67,39,18,59,97,38,20,82,82,19,7,26,80,39,16,23,86,8,20,17,48,93,61,52,67,23,29,13,63,29,38,32,49,13
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+grape * orange
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+24,13,47,24,97,48,23,95,19,6,4,74,72,16,77,46,56,11,96,4,74,50,31,48,98,83,60,93,39,93,77,47,73,77,44,31,27,99,69,20,9,41,50,95,80,87,8,57,40,44,36,94,18,66,46,66,90,26,77,56,97,51,77,26,5,35,84,65,66,74 * 61,38,74,36,28,45,50,75,12,33,2,99,65,94,94,69,75,54,71,46,96,45,48,76,74,81,1,35,70,31,17,84,54,19,95,27,62,34,26,75,1,82,90,5,32,61,43,46,87,90,18,34,47,46,26,30,46,44,14,19,65,14,8,84
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+
+orange - true
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+apple / true
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const greet = name => `Hello, ${name}!`;
+kiwi + 40
+
+const squareRoot = num => Math.sqrt(num);
