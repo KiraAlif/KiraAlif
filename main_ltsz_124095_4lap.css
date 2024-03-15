@@ -1,0 +1,17 @@
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const variableName = getRandomNumber();
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+const getUniqueValues = array => [...new Set(array)];
+const squareRoot = num => Math.sqrt(num);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+apple
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+orange
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
