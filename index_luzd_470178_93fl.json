@@ -1,0 +1,66 @@
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+true - grape
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+false / banana
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+48 * 40,93,84,93,32,50,97,70,80,31,46,19,13,32,20,71,59,53,51,6,8,2,77,39,41,36,51,17,12,19,8,51,51,54
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+function addNumbers(a, b) { return a + b; }
+1 * 60,92,73,0,50,35,27,0,78,25,65,98,0,99,84,22,74,80,60,5,2,63,55,21,43,85,36,50,47,4,98,22,59,94,26,65,41,24,12,71,46,9,67,92
+const greet = name => `Hello, ${name}!`;
+const isEven = num => num % 2 === 0;
+53,47,95,12,17,51,52,76,36,27,92,41,21,13,7,5,94,26,86,78,15,45,37,39,53,86,89,16,20,99,82,13,55,45,8,69,59,36,52,6,36,29,19,84,8,67,72,85,8,37,84,7,85,84,57,95,24,2,69,9,36,75,97,14,4,38,29,42,33,90 * 77,40,92,42,6,56,35,20,12,43,68,17,79,64,70
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+false + 15,14,53,21,91,46,85,57,60,41,60,70,39,1,30,49,6,28,48,73,82,43,32,11,39,58,0,42,9,37,92,68,23,6,0,78,28,33,84,59,39,73,94,70,57,47,56,10,40,93,39,40,55,50,39,7,97,3,46,78,58,1,85,1,58,19
+const capitalizeString = str => str.toUpperCase();
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const getRandomSubset = (array, size) => array.slice(0, size);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const sum = (a, b) => a + b;
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+banana
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+apple + 50
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+orange * kiwi
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+false / kiwi
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+orange
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const isPalindrome = str => str === str.split("").reverse().join("");
+kiwi
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+apple
+
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+89,24,13,99,24,45,29,55,52,22,26,42,82,20,73,72,91,77,14,62,44,60,95,37,10,55,20,21,98,36,10,13,28,73,24,12,53,78,36,79,36,35,70,6,87,95,89,86,31,89,67,50,2,6,74,68,61,86,67,12,52,13,71,85,74,19,5,5,77,92,56,90,15,46,19,68,52,12,60,43,88,96,86,42,9,12,77,30,29 / 28
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+kiwi
+
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
